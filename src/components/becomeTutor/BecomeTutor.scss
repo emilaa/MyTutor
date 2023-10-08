@@ -1,0 +1,63 @@
+#become_tutor {
+  margin-top: 3rem;
+
+  .become_tutor__main {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-columns: auto auto;
+
+    .main__tutors,
+    .main__background {
+      width: 49rem;
+      height: 39.2rem;
+    }
+
+    .main__become {
+      padding: 7rem 6.3rem 10.9rem 6rem;
+
+      .content {
+        margin-top: 1.7rem;
+      }
+    }
+
+    .main__background {
+      padding: 3.3rem 0 3.3rem 0;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .main__become {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  #become_tutor {
+    margin-top: 6.2rem;
+
+    .become_tutor__main {
+      grid-row-gap: 3rem;
+      position: relative;
+      grid-template-columns: auto !important;
+
+      .main__become {
+        text-align: center;
+        padding: 0 !important;
+      }
+
+      .main__background {
+        width: 100% !important;
+        height: auto !important;
+        padding-top: 0 !important;
+
+        .background__image {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

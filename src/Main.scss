@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+:root {
+  --main-font: Poppins;
+  --main-color: #feeadb;
+  --main-textColor: #1c1b1b;
+  --main-buttonColor: #f97b22;
+  --main-buttonHoverColor: #fff;
+  --body-backgroundColor: #fff;
+  --layout-backgroundColor: #fff3ea;
+  --account-color: #f8af7b;
+  --disabled-color: #f3f3f3;
+  --offline-color: #ffd2b2;
+  --online-color: #22f944;
+  --success-color: #25be2b;
+  --solid-color: #d6d5d5;
+  --default-photoColor: #d3d3d3;
+  --section-backgroundColor: #121212;
+}
+
+html {
+  font-size: 62.5%;
+  font-style: normal;
+  line-height: normal;
+}
+
+body {
+  background-color: var(--body-backgroundColor);
+  font-family: var(--main-font);
+  color: var(--main-textColor);
+
+  .container {
+    width: 100%;
+    max-width: 67%;
+    margin: auto;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .a {
+    text-decoration: none;
+  }
+
+  button {
+    border: none;
+  }
+
+  input {
+    border: none;
+    outline: none;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,153 @@
+#find_tutor {
+  height: 69rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../assets/images/main_background.png);
+
+  .find_tutor__main {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-columns: auto auto;
+
+    .main__find,
+    .main__tutors {
+      width: 49rem;
+      height: 39.2rem;
+    }
+
+    .main__find {
+      padding: 5rem 6.3rem 8.2rem 6rem;
+
+      .title {
+        width: 22rem;
+      }
+
+      .content {
+        width: 36.7rem;
+        margin-top: 1.7rem;
+      }
+
+      .find__search {
+        width: 32.9rem;
+        height: 5.2rem;
+        display: grid;
+        align-items: center;
+        position: relative;
+        margin-top: 3.6rem;
+
+        .search__input {
+          width: 100%;
+          height: 100%;
+          border-radius: 4rem;
+          padding-left: 5.2rem;
+
+          &::placeholder {
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: var(--default-photoColor);
+          }
+        }
+
+        svg {
+          left: 14px;
+          position: absolute;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .main__tutors {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-column-gap: 2rem;
+      padding: 1.3rem 4.3rem;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #find_tutor {
+    .main__find,
+    .main__tutors {
+      width: 33rem !important;
+      padding: 0 !important;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  #find_tutor {
+    height: 100rem !important;
+
+    .find_tutor__main {
+      grid-template-columns: auto !important;
+
+      .main__find,
+      .main__tutors {
+        width: 100% !important;
+      }
+
+      .main__find {
+        height: 25rem;
+
+        .title,
+        .content {
+          width: 100%;
+          text-align: center;
+        }
+
+        .find__search {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #find_tutor {
+    .main__find {
+      height: 25rem;
+
+      .title,
+      .content {
+        width: 100%;
+        text-align: center;
+      }
+
+      .find__search {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  #find_tutor {
+    height: 40rem !important;
+
+    .main__tutors {
+      display: none !important;
+    }
+
+    .search__input {
+      &::placeholder {
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #find_tutor {
+    height: 50rem !important;
+
+    .search__input {
+      &::placeholder {
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
