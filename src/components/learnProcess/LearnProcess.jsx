@@ -55,8 +55,8 @@ function LearnProcess() {
                 >
                   <rect width="221" height="66" rx="20" fill="#FFD2B2" />
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M20 66H153.5C153.5 66 145.67 52.1328 147 43C147.591 38.9391 150.436 35.2746 153.263 31.631C156.532 27.4192 159.78 23.2354 159.5 18.5C158.916 8.60299 149 0 149 0H20C8.9543 0 0 8.95431 0 20V46C0 57.0457 8.9543 66 20 66Z"
                     fill="#F97B22"
                   />

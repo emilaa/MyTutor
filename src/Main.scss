@@ -44,6 +44,14 @@ body {
     margin: auto;
   }
 
+  .d-none {
+    display: none !important;
+  }
+
+  .d-block {
+    display: grid !important;
+  }
+
   li {
     list-style: none;
   }
@@ -54,6 +62,7 @@ body {
 
   button {
     border: none;
+    cursor: pointer;
   }
 
   input {

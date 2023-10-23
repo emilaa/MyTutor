@@ -1,0 +1,135 @@
+.main_tutor {
+  width: 43.4rem;
+  height: 23.8rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: var(--body-backgroundColor);
+  box-shadow: -0.2rem 0 3rem -0.3rem rgba(0, 0, 0, 0.1);
+
+  .tutor__image_name {
+    width: 19rem;
+    height: 23.8rem;
+    position: relative;
+
+    .image_name__image {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+    }
+
+    .image_name__name {
+      font-size: 18px;
+      font-weight: 500;
+      position: absolute;
+      left: 2.5rem;
+      bottom: 1.5rem;
+      color: var(--body-backgroundColor);
+    }
+  }
+
+  .tutor__about {
+    width: 24.4rem;
+    padding: 1.5rem;
+
+    .about__rate_favorite {
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: auto auto;
+
+      .rate_favorite__rate_star {
+        display: grid;
+        grid-column-gap: 0.2rem;
+        grid-template-columns: auto auto;
+
+        .rate_star__rate {
+          font-size: 1.6rem;
+          font-weight: 700;
+        }
+      }
+
+      .rate_favorite__favorite {
+        cursor: pointer;
+      }
+    }
+
+    .about__description {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-top: 2.1rem;
+    }
+
+    .about__price_chat {
+      display: grid;
+      grid-column-gap: 1.5rem;
+      margin-top: 3.5rem;
+      justify-content: end;
+      grid-template-columns: auto auto;
+
+      .price_chat__price,
+      .price_chat__chat {
+        height: 4.4rem;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var(--main-buttonColor);
+        background-color: var(--main-color);
+      }
+
+      .price_chat__price {
+        width: 7.1rem;
+        padding: 0 1.3rem;
+        border-radius: 4.9rem;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .price_chat__chat {
+        width: 10rem;
+        padding: 0 3rem;
+        border-radius: 2rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .main_tutor {
+    width: 100%;
+    height: 100%;
+
+    .tutor__about {
+      width: 100%;
+      height: 100%;
+
+      .about__price_chat {
+        margin-top: 7.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 843px) {
+  .main_tutor {
+    .tutor__image_name {
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 606px) {
+  .main_tutor {
+    grid-template-columns: auto;
+
+    .tutor__image_name {
+      width: 100%;
+    }
+
+    .tutor__about {
+      .about__price_chat {
+        margin-top: 1.5rem !important;
+      }
+    }
+  }
+}

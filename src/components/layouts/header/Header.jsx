@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import { Link } from "react-router-dom";
 import Logo from "../../../assets/images/logo.png";
@@ -10,7 +10,9 @@ function Header() {
     <header>
       <div className="container">
         <div className="nav_area">
-          <img src={Logo} alt="" />
+          <Link to="/">
+            <img src={Logo} alt="" />
+          </Link>
           <nav className="nav_area__nav_bar">
             <ul className="nav_bar__list">
               <li className="list__item">
